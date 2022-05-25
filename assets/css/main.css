@@ -248,44 +248,19 @@
         padding: 25px 0;
         margin-left: 0;
     }
+
+    .location__card {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
 }
 
-span.infograph {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 0 20px 0 0;
+@media all and (max-width: 400px) {
+    .search__card__content__right {
+        flex-direction: column-reverse;
+    }
 
-  vertical-align: bottom;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
-}
-
-span.infograph-date {
-    background-image: url("../images/ig-date.png");
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-}
-
-span.infograph-count {
-    background-image: url("../images/ig-count.png");
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-}
-
-span.infograph-area {
-    background-image: url("../images/ig-area.png");
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-}
-
-span.infograph-places {
-    background-image: url("../images/ig-places.png");
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-}
-
-span.infograph-order {
-    background-image: url("../images/ig-order.png");
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
+    .location__card {
+        flex-direction: column;
+    }
 }
